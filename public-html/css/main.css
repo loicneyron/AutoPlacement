@@ -1,0 +1,148 @@
+html{
+    background-color: #FCF8E3;
+}
+.Top-bar {
+    background-color: #888;
+    height: 6vh;
+    width: 100vw;
+    margin:-9px;
+}
+.content {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/assets/planSalle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+}
+
+.fa-random {
+    position: absolute;
+    top: 83%;
+    left: 80%;
+    font-size: 100px;
+    color: #716eaf;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.fa-random:hover {
+    color: #6864c9;
+    text-shadow: 5px 5px #ccc; 
+}
+
+.legend{
+    text-align: center;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 25%;
+    background-color: rgb(206, 206, 206);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+ .ligne-1 {
+    border-bottom: 2px solid white;
+    background-color:rgba(0, 0, 0, 0.075); 
+ }
+
+ .ligne-2 {
+    border-bottom: 2px solid rgb(255, 0, 0);
+ }
+
+ .place {
+     font-size: 40px;
+     font-style: italic;
+     position: absolute;
+ }
+
+ #p1{
+    left: 6%;
+    top: 14%;
+ }
+
+ #p2{
+    left: 6%;
+    top: 33%;
+ }
+
+ #p3{
+    left: 6%;
+    top: 52%;
+ }
+
+ #p4{
+    left: 6%;
+    top: 71%;
+ }
+
+ #p5{
+    left: 8%;
+    top: 93%;
+ }
+
+ #p6{
+    left: 18%;
+    top: 72%;
+ }
+
+ #p7{
+    left: 18%;
+    top: 53%;
+ }
+
+ #p8{
+    left: 18%;
+    top: 34%;
+ }
+
+ #p9{
+    left: 18%;
+    top: 15%;
+ }
+
+ #p10{
+    left: 57.5%;
+    top: 24%;
+ }
+
+ #p11{
+    left: 57.5%;
+    top: 43.5%;
+ }
+
+ #p12{
+    left: 57.5%;
+    top: 63%;
+ }
+
+ #p13{
+    left: 57.5%;
+    top: 82%;
+ }
+
+ #p14{
+     left: 68%;
+     top: 82%;
+ }
+
+ #p15{
+    left: 68%;
+    top: 63%;
+ }
+
+ #p16{
+    left: 68%;
+    top: 44.5%;
+ }
+
+ #p17{
+    left: 68%;
+    top: 25%;
+ }
+
+ #p0{
+    left: 14%;
+    top: 93%;
+ }
