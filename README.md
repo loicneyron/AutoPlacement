@@ -28,3 +28,8 @@ Admin ( BDD )  : http://localhost:8081
 - host: autoplacement_db_1
 - user: root
 - password: 'p4ssword
+
+# Executer le script d'insertion en BDD des positions
+```bash
+docker exec -i -t autoplacement_node_1 sh -c "node app/generate_placement.js"
+```
