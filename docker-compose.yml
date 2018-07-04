@@ -1,0 +1,41 @@
+version: '3'
+services:
+  web:
+    image: httpd:2.4
+    container_name: auto_placement
+    ports:
+      - "8080:80"
+    volumes:
+      - ./public-html:/usr/local/apache2/htdocs/
+    command: > 
+      bash -c "echo -e '\033[0;32mSERVER READY ON http://localhost:8080\033[0m' && httpd-foreground"
+
+  node:
+    image: "node:8"
+    working_dir: /application
+    volumes:
+      - ./:/application
+    ports:
+      - "3000:3000"
+      - "5858:5858"
+    command: >
+      bash -c "npm install node-sass --save
+      && npm install mariasql --save
+      && npm start"
+    links:
+      - db
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: p4ssword
+    volumes:
+      - ./:/application
+    working_dir: /application
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
