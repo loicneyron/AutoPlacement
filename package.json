@@ -1,0 +1,22 @@
+{
+    "name": "simplon-roanne-autoplacement",
+    "author": {
+        "name": "Simplon Roanne",
+        "email": "loicneyron@gmail.com",
+        "url": "https://simplon-roanne.com"
+    },
+    "scripts": {
+        "start": "./node_modules/.bin/node-sass scss -o  public-html/css -w --source-map public-html/css"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "mariasql": "^0.2.6",
+        "node-sass": "^4.9.0",
+        "nodemailer": "^4.6.7",
+        "nodemon": "^1.17.5",
+        "npm": "^6.1.0",
+        "pg": "^7.4.3",
+        "start": "^5.1.0"
+    }
+}
